@@ -15,6 +15,8 @@
 		CDF21B1622D44A5C007628E3 /* tripPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B1522D44A5C007628E3 /* tripPlanTests.swift */; };
 		CDF21B2922D4538C007628E3 /* TripItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */; };
 		CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2A22D45509007628E3 /* mapItem.swift */; };
+		CDF21B2E22D4577E007628E3 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */; };
+		CDF21B2F22D4577E007628E3 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		CDF21B1722D44A5C007628E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF21B2822D4538C007628E3 /* tripPlan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tripPlan.xcdatamodel; sourceTree = "<group>"; };
 		CDF21B2A22D45509007628E3 /* mapItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapItem.swift; sourceTree = "<group>"; };
+		CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		CDF21B2022D44A7D007628E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */,
+				CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */,
 				CDF21B2A22D45509007628E3 /* mapItem.swift */,
 				CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */,
 			);
@@ -211,10 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF21B2F22D4577E007628E3 /* Trip+CoreDataProperties.swift in Sources */,
 				CDF21B0022D44A5B007628E3 /* ViewController.swift in Sources */,
 				CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */,
 				CDF21AFE22D44A5B007628E3 /* AppDelegate.swift in Sources */,
 				CDF21B2922D4538C007628E3 /* TripItem.xcdatamodeld in Sources */,
+				CDF21B2E22D4577E007628E3 /* Trip+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
