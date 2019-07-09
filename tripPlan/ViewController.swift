@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func createHeader()
     {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 35))
+        let vieww = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 35))
         let label = UILabel()
         label.frame = CGRect(x: 20, y: 0, width: self.view.bounds.width - 40, height: 35)
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
@@ -40,10 +40,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button.titleLabel?.sizeToFit()
         button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(addTrip), for: .touchUpInside)
-        view.addSubview(label)
-        view.addSubview(button)
+        vieww.addSubview(label)
+        vieww.addSubview(button)
 
-        tableView.tableHeaderView = view
+        tableView.tableHeaderView = vieww
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return self.view.bounds.height * 0.1

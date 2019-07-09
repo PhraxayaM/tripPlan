@@ -63,7 +63,7 @@ class TripVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         label.textAlignment = .center
         label.numberOfLines = 2
         let buttons = UIButton(frame: CGRect(x: 10, y: label.frame.maxY + 20, width: self.view.bounds.width - 20, height: 35))
-        buttons.setTitleColor(.purple, for: .normal)
+        buttons.setTitleColor(.red, for: .normal)
         buttons.setTitle("Add more waypoints?", for: .normal)
         buttons.addTarget(self, action: #selector(addWP), for: .touchUpInside)
         if let wps = theTrip.waypoints

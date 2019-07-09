@@ -19,6 +19,7 @@ class wPointVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     var selectedWP = MKMapItem()
     var theTrip: Trip!
     var store: CoreDataStack!
+    var searchBar = UITextField()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,30 +44,37 @@ class wPointVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         view.addSubview(label)
         view.addSubview(b2)
         
-      
+        searchBar.frame = CGRect(x: 20, y: label.frame.maxY, width: self.view.bounds.width - 40, height: 30)
+        searchBar.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        searchBar.layer.cornerRadius = 10
+        searchBar.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        searchBar.layer.borderWidth = 1
+        searchBar.returnKeyType = .done
+        searchBar.delegate = self
+        searchBar.placeholder = "Search"
+        self.view.addSubview(searchBar)
         
         
         tableView.register(wPointCell.self, forCellReuseIdentifier: "wpcell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = CGRect(x: 0, y: label.frame.maxY + 30, width: self.view.bounds.width, height: self.view.bounds.height / 2 - (label.frame.maxY + 30))
-        //tableView.separatorStyle = .none
         self.view.addSubview(tableView)
         tableView.reloadData()
         mapView.frame = CGRect(x: 0, y: tableView.frame.maxY, width: self.view.bounds.width, height: self.view.bounds.height - tableView.frame.maxY)
         mapView.delegate = self
-        centerMap(location: CLLocation(latitude: 37.7862002, longitude: -122.408004))
-        let userDefaults = Foundation.UserDefaults.standard
-        if let xT = userDefaults.string(forKey: "xLoc")
-        {
-            if let yT = userDefaults.string(forKey: "yLoc")
-            {
-                if(!xT.isEmpty && !yT.isEmpty)
-                {
-                    centerMap(location: CLLocation(latitude: CLLocationDegrees(xT)!, longitude: CLLocationDegrees(yT)!))
-                }
-            }
-        }
+        centerMap(location: CLLocation(latitude: 37.7862002, longitude: 41))
+        //let userDefaults = Foundation.UserDefaults.standard
+        //if let xT = userDefaults.string(forKey: "xLoc")
+        //{
+           // if let yT = userDefaults.string(forKey: "yLoc")
+            //{
+              //  if(!xT.isEmpty && !yT.isEmpty)
+               // {
+                    //centerMap(location: CLLocation(latitude: CLLocationDegrees(xT)!, longitude: CLLocationDegrees(yT)!))
+               // }
+            //}
+        //}
         
         self.view.addSubview(mapView)
     }
