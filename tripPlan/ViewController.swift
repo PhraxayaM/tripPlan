@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var tableView = UITableView()
-    var store: CoreDataStack!
+    var storage: CoreDataStack!
     var trips: [Trip]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,12 +53,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         print("add trip pressed")
         let vc = CreateTrip()
-        vc.store = self.store
+        vc.store = self.storage
         self.present(vc, animated: true, completion: nil)
     }
     func fetchTrips()
     {
-        self.store.fetchPersistedData {
+        self.storage.fetchPersistedData {
             
             (fetchItemsResult) in
             
@@ -80,8 +80,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             let item = self.trips[indexPath.row]
-            store.persistentContainer.viewContext.delete(item)
-            store.saveContext()
+            storage.persistentContainer.viewContext.delete(item)
+            storage.saveContext()
             trips.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
@@ -92,7 +92,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = TripVC()
         vc.theTrip = self.trips[indexPath.row]
-        vc.store = self.store
+        vc.store = self.storage
         self.present(vc, animated: true, completion: nil)
     }  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
