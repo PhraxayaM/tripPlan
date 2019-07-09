@@ -25,13 +25,11 @@ public class mapItem: NSObject, NSCoding {
 
     }
     
-    // Protocol requires an encode method to encode our variables based on the Key
     public func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: "name")
       
     }
-    
-    // Protocol requires an init method which acts as a decoder for our variables based on the Key
+
     public required init?(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObject(forKey: "name") as! String
         super.init()

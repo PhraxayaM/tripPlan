@@ -17,6 +17,12 @@
 		CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2A22D45509007628E3 /* mapItem.swift */; };
 		CDF21B2E22D4577E007628E3 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */; };
 		CDF21B2F22D4577E007628E3 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */; };
+		CDF21B3122D45A61007628E3 /* TripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B3022D45A61007628E3 /* TripVC.swift */; };
+		CDF21B3322D45A83007628E3 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B3222D45A83007628E3 /* TripCell.swift */; };
+		CDF21B3522D45AB0007628E3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B3422D45AB0007628E3 /* CoreDataStack.swift */; };
+		CDF21B3D22D461ED007628E3 /* CreateTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B3C22D461ED007628E3 /* CreateTrip.swift */; };
+		CDF21B4322D47526007628E3 /* wPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B4222D47526007628E3 /* wPointCell.swift */; };
+		CDF21B4522D47580007628E3 /* wPointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B4422D47580007628E3 /* wPointVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		CDF21B2A22D45509007628E3 /* mapItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapItem.swift; sourceTree = "<group>"; };
 		CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDF21B3022D45A61007628E3 /* TripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripVC.swift; sourceTree = "<group>"; };
+		CDF21B3222D45A83007628E3 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
+		CDF21B3422D45AB0007628E3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CDF21B3C22D461ED007628E3 /* CreateTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrip.swift; sourceTree = "<group>"; };
+		CDF21B4222D47526007628E3 /* wPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wPointCell.swift; sourceTree = "<group>"; };
+		CDF21B4422D47580007628E3 /* wPointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wPointVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,11 @@
 				CDF21AFD22D44A5B007628E3 /* AppDelegate.swift */,
 				CDF21B2022D44A7D007628E3 /* Models */,
 				CDF21AFF22D44A5B007628E3 /* ViewController.swift */,
+				CDF21B3022D45A61007628E3 /* TripVC.swift */,
+				CDF21B4422D47580007628E3 /* wPointVC.swift */,
+				CDF21B4222D47526007628E3 /* wPointCell.swift */,
+				CDF21B3C22D461ED007628E3 /* CreateTrip.swift */,
+				CDF21B3222D45A83007628E3 /* TripCell.swift */,
 				CDF21B0122D44A5B007628E3 /* Main.storyboard */,
 				CDF21B0722D44A5C007628E3 /* Assets.xcassets */,
 				CDF21B0922D44A5C007628E3 /* LaunchScreen.storyboard */,
@@ -109,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CDF21B2C22D4577E007628E3 /* Trip+CoreDataClass.swift */,
+				CDF21B3422D45AB0007628E3 /* CoreDataStack.swift */,
 				CDF21B2D22D4577E007628E3 /* Trip+CoreDataProperties.swift */,
 				CDF21B2A22D45509007628E3 /* mapItem.swift */,
 				CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */,
@@ -217,12 +235,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF21B3322D45A83007628E3 /* TripCell.swift in Sources */,
 				CDF21B2F22D4577E007628E3 /* Trip+CoreDataProperties.swift in Sources */,
 				CDF21B0022D44A5B007628E3 /* ViewController.swift in Sources */,
+				CDF21B3D22D461ED007628E3 /* CreateTrip.swift in Sources */,
+				CDF21B3522D45AB0007628E3 /* CoreDataStack.swift in Sources */,
 				CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */,
 				CDF21AFE22D44A5B007628E3 /* AppDelegate.swift in Sources */,
+				CDF21B3122D45A61007628E3 /* TripVC.swift in Sources */,
 				CDF21B2922D4538C007628E3 /* TripItem.xcdatamodeld in Sources */,
 				CDF21B2E22D4577E007628E3 /* Trip+CoreDataClass.swift in Sources */,
+				CDF21B4322D47526007628E3 /* wPointCell.swift in Sources */,
+				CDF21B4522D47580007628E3 /* wPointVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
