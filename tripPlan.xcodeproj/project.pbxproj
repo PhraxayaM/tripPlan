@@ -10,10 +10,11 @@
 		CDF21AFE22D44A5B007628E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21AFD22D44A5B007628E3 /* AppDelegate.swift */; };
 		CDF21B0022D44A5B007628E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21AFF22D44A5B007628E3 /* ViewController.swift */; };
 		CDF21B0322D44A5B007628E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF21B0122D44A5B007628E3 /* Main.storyboard */; };
-		CDF21B0622D44A5B007628E3 /* tripPlan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B0422D44A5B007628E3 /* tripPlan.xcdatamodeld */; };
 		CDF21B0822D44A5C007628E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF21B0722D44A5C007628E3 /* Assets.xcassets */; };
 		CDF21B0B22D44A5C007628E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF21B0922D44A5C007628E3 /* LaunchScreen.storyboard */; };
 		CDF21B1622D44A5C007628E3 /* tripPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B1522D44A5C007628E3 /* tripPlanTests.swift */; };
+		CDF21B2922D4538C007628E3 /* TripItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */; };
+		CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF21B2A22D45509007628E3 /* mapItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		CDF21AFD22D44A5B007628E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF21AFF22D44A5B007628E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDF21B0222D44A5B007628E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDF21B0522D44A5B007628E3 /* tripPlan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tripPlan.xcdatamodel; sourceTree = "<group>"; };
 		CDF21B0722D44A5C007628E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF21B0A22D44A5C007628E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF21B0C22D44A5C007628E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF21B1122D44A5C007628E3 /* tripPlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tripPlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF21B1522D44A5C007628E3 /* tripPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripPlanTests.swift; sourceTree = "<group>"; };
 		CDF21B1722D44A5C007628E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF21B2822D4538C007628E3 /* tripPlan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tripPlan.xcdatamodel; sourceTree = "<group>"; };
+		CDF21B2A22D45509007628E3 /* mapItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,6 @@
 				CDF21B0722D44A5C007628E3 /* Assets.xcassets */,
 				CDF21B0922D44A5C007628E3 /* LaunchScreen.storyboard */,
 				CDF21B0C22D44A5C007628E3 /* Info.plist */,
-				CDF21B0422D44A5B007628E3 /* tripPlan.xcdatamodeld */,
 			);
 			path = tripPlan;
 			sourceTree = "<group>";
@@ -103,6 +104,8 @@
 		CDF21B2022D44A7D007628E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CDF21B2A22D45509007628E3 /* mapItem.swift */,
+				CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,9 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF21B0622D44A5B007628E3 /* tripPlan.xcdatamodeld in Sources */,
 				CDF21B0022D44A5B007628E3 /* ViewController.swift in Sources */,
+				CDF21B2B22D4550A007628E3 /* mapItem.swift in Sources */,
 				CDF21AFE22D44A5B007628E3 /* AppDelegate.swift in Sources */,
+				CDF21B2922D4538C007628E3 /* TripItem.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,13 +479,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CDF21B0422D44A5B007628E3 /* tripPlan.xcdatamodeld */ = {
+		CDF21B2722D4538C007628E3 /* TripItem.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CDF21B0522D44A5B007628E3 /* tripPlan.xcdatamodel */,
+				CDF21B2822D4538C007628E3 /* tripPlan.xcdatamodel */,
 			);
-			currentVersion = CDF21B0522D44A5B007628E3 /* tripPlan.xcdatamodel */;
-			path = tripPlan.xcdatamodeld;
+			currentVersion = CDF21B2822D4538C007628E3 /* tripPlan.xcdatamodel */;
+			path = TripItem.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

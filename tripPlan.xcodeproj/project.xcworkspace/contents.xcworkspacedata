@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:tripPlan.xcodeproj">
+      location = "group:../mapItem.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../tripPlan/Models/mapItem.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../tripPlan/Models/TripItem.xcdatamodeld">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
