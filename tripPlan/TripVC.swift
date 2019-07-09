@@ -58,13 +58,25 @@ class TripVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         let label = UILabel()
         label.frame = CGRect(x: 20, y: self.view.bounds.height * 0.2, width: self.view.bounds.width - 40, height: 60)
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = UIFont(name: "AvenirNext-HeavyItalic", size: 20)
+        label.font = UIFont(name: "Frutiger-HeavyItalic", size: 20)
         label.text = theTrip.tripname
         label.textAlignment = .center
         label.numberOfLines = 2
-     
+        let buttons = UIButton(frame: CGRect(x: 10, y: label.frame.maxY + 20, width: self.view.bounds.width - 20, height: 35))
+        buttons.setTitleColor(.purple, for: .normal)
+        buttons.setTitle("Add more waypoints?", for: .normal)
+        buttons.addTarget(self, action: #selector(addWP), for: .touchUpInside)
+        if let wps = theTrip.waypoints
+        {
+            if(wps.count < 1)
+            {
+                label.text = "You don't have any \nwaypoints for your trip."
+                buttons.setTitle("Start", for: .normal)
+            }
+        }
         
         vieww.addSubview(label)
+        vieww.addSubview(buttons)
         tableView.tableHeaderView = vieww
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
